@@ -1,11 +1,11 @@
-pipeline{
+pipeline {
 	agent any
 	tools{
 		maven 'Maven'
 		jdk 'JDK'
 	}
 	
-	Stages{
+	stages{
 		stage('checkout'){
 			steps{
 			git branch:'main', url: 'https://github.com/Gurukiran-H-S/MavenT.git'
